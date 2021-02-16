@@ -1,2 +1,2 @@
-# My-team
-https://eduard-mychka.github.io/My-team/.
+# My Team
+https://eduard-mychka.github.io/my-team/.
