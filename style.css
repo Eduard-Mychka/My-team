@@ -4,159 +4,7 @@ body {
   background-color: rgb(233, 224, 224);
 }
 
-.header {
-  background: rgb(252, 69, 69);
-  background: linear-gradient(
-    90deg,
-    rgb(255, 46, 46) 0%,
-    rgb(29, 253, 219) 50%,
-    rgb(255, 46, 46) 100%
-  );
-  margin: 0;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  padding-bottom: 60px;
-  text-transform: uppercase;
-}
-
-.nav__link {
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 5px;
-  padding: 5px;
-  color: rgb(0, 0, 0);
-  background-color: rgba(194, 194, 194, 0.397);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav__link:hover {
-  text-decoration: underline;
-  height: 3px;
-  font-weight: bold;
-  border-radius: 15px;
-  transition: color 0.9s linear;
-  color: hsl(0, 0%, 0%);
-  background-color: rgb(0, 247, 255);
-}
-
-.logo {
-  padding: 0px;
-  margin: 10px 10% 20px 20px;
-}
-
-.logo__link {
-  text-decoration: none;
-}
-.icons {
-  object-fit: cover;
-  margin: 0;
-  padding: 2px;
-  border-radius: 45%;
-}
-
-.icons:hover {
-  object-fit: cover;
-  transition: linear 0.5s;
-  background-color: aqua;
-  cursor: pointer;
-  background-image: url(img/icons8-ios-с-заливкой-100.png);
-}
-
-.nav__menu {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  margin-top: 20px;
-}
-
-.nav__menu:hover:after {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  text-decoration: underline;
-  position: static;
-}
-
-/* СЕРНДИНА//БЛОКИ */
-.row {
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  background: rgb(140, 246, 255);
-  background: radial-gradient(
-    circle,
-    rgba(140, 246, 255, 1) 26%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  text-align: center;
-}
-
-.row__item {
-  flex: 314px 0 0;
-  margin: 0 10px;
-}
-
-.service {
-  padding: 0 25px;
-}
-
-.service__photo {
-  object-fit: cover;
-  width: 200px;
-  height: 350px;
-  border-radius: 50%;
-  max-height: 209px;
-}
-.service__photo:hover {
-  transition: linear 0.2s;
-  background-color: #c7afaf00;
-  box-shadow: 12px 12px 20px rgba(117, 79, 79, 0.63);
-}
-
-.service__title {
-  letter-spacing: 1px;
-  font-family: "Kaushan Script", cursive;
-  font-size: 25px;
-  line-height: 140%;
-  margin: 20px 0 20px 0;
-  font-weight: 900;
-}
-
-.service__centr::before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.25) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    #d0ff00;
-}
-
-.service__description {
-  font-style: italic;
-  width: 250px;
-  height: 130px;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 20px;
-  background-color: rgb(209, 209, 209);
-  border-radius: 30px;
-  position: relative;
-  box-shadow: 26px 26px 22px rgba(100, 65, 65, 0.63);
-}
-
-.client {
+.person {
   position: relative;
   margin: 50px;
   border-radius: 50px;
@@ -166,7 +14,7 @@ body {
   box-shadow: 26px 26px 22px rgba(100, 65, 65, 0.63);
 }
 
-.client__decor1 {
+.decor1 {
   position: absolute;
   width: 120px;
   height: 100px;
@@ -181,14 +29,14 @@ body {
     ),
     #56ccf2;
 }
-.client__decor1:hover {
+.decor1:hover {
   transition: linear 0.2s;
   width: 150px;
   height: 80px;
   background-color: rgb(0, 195, 255);
 }
 
-.client__decor2 {
+.decor2 {
   position: absolute;
   width: 120px;
   height: 100px;
@@ -203,14 +51,14 @@ body {
     ),
     #fcc304;
 }
-.client__decor2:hover {
+.decor2:hover {
   transition: linear 0.2s;
   width: 150px;
   height: 80px;
   background-color: #fcc304;
 }
 
-.client__decor3 {
+.decor3 {
   position: absolute;
   width: 120px;
   height: 100px;
@@ -225,19 +73,19 @@ body {
     ),
     red;
 }
-.client__decor3:hover {
+.decor3:hover {
   transition: linear 0.2s;
   width: 150px;
   height: 80px;
   background-color: red;
 }
 
-.client__photo {
+.photo {
   object-fit: cover;
   position: absolute;
-  width: 104px;
+  width: 120px;
   height: 124px;
-  border-radius: 30px;
+  border-radius: 50px;
   left: calc(50% - 42px);
   top: 100px;
   overflow: hidden;
@@ -245,23 +93,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-.client__photo:hover {
+.photo:hover {
   transition: linear 0.2s;
   width: 110px;
-  height: 130px;
+  height: 130px; 
 }
 
-.client__img {
+.img {
   height: 100%;
-}
+} 
 
-.client__quote {
+.text {
   font-family: "Merienda", cursive;
   font-size: 16px;
   margin: 0;
   font-weight: 500;
 }
-.client__quote:hover {
+.text:hover {
   padding: 9px;
   transition: linear 0.4s;
   background-color: rgb(203, 255, 250);
@@ -269,19 +117,19 @@ body {
   box-shadow: 10px 10px 16px rgba(100, 65, 65, 0.63);
 }
 
-.client__quote::before {
+.text:before {
   content: "''";
 }
 
-.client__quote::after {
+.text:after {
   content: "''";
 }
 
-.client__about {
+.about {
   font-size: 16px;
 }
 
-.client__about::before {
+.about::before {
   content: "";
   display: block;
   margin: 35px auto;
@@ -295,7 +143,7 @@ body {
     #56ccf2;
 }
 
-.client__name {
+.title {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 21px;
@@ -303,323 +151,10 @@ body {
   font-family: "Kaushan Script", cursive;
 }
 
-.client__position {
+.position {
   font-weight: 800;
   letter-spacing: 10px;
   text-transform: uppercase;
   margin-bottom: 2px;
   color: red;
-}
-
-.stars-1 {
-  border-radius: 10px;
-  padding: 2px;
-  display: flex;
-  margin: 10px 55% 20px 50px;
-  box-shadow: 15px 15px 30px rgba(77, 38, 7);
-}
-.stars-1 svg path {
-  fill: grey;
-}
-
-.stars-2 {
-  border-radius: 12px;
-  padding: 3px;
-  display: flex;
-  margin: 10px 45% 20px 50px;
-  box-shadow: 15px 15px 30px rgba(77, 38, 7);
-}
-.stars-2 svg:nth-child(n) path {
-  fill: grey;
-}
-.stars-2 svg:nth-child(1) path {
-  fill: red;
-}
-.stars-2 svg:nth-child(1) path:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.stars-3 {
-  border-radius: 14px;
-  padding: 4px;
-  display: flex;
-  margin: 10px 35% 20px 50px;
-  box-shadow: 15px 15px 30px rgba(77, 38, 7);
-}
-.stars-3 svg:nth-child(n + 2) path {
-  fill: grey;
-}
-.stars-3 svg:nth-child(-n + 2) path {
-  fill: red;
-}
-
-.stars-4 {
-  border-radius: 16px;
-  padding: 5px;
-  display: flex;
-  margin: 10px 25% 20px 50px;
-  box-shadow: 15px 15px 30px rgba(77, 38, 7);
-}
-.stars-4 svg:nth-child(n + 3) path {
-  fill: grey;
-}
-.stars-4 svg:nth-child(-n + 3) path {
-  fill: red;
-}
-
-.stars-5 {
-  border-radius: 18px;
-  padding: 6px;
-  display: flex;
-  margin: 10px 15% 20px 50px;
-  box-shadow: 15px 15px 30px rgba(77, 38, 7);
-}
-.stars-5 svg:nth-child(n + 4) path {
-  fill: grey;
-}
-.stars-5 svg:nth-child(-n + 4) path {
-  fill: red;
-}
-
-.stars-6 {
-  border-radius: 20px;
-  padding: 7px;
-  display: flex;
-  margin: 10px 5% 40px 50px;
-  box-shadow: 15px 15px 30px rgb(77, 38, 7);
-}
-.stars-6 svg:nth-child(n + 5) path {
-  fill: grey;
-}
-.stars-6 svg:nth-child(-n + 6) path {
-  fill: red;
-}
-
-.star {
-  width: 25px;
-  height: 25px;
-}
-.star {
-  width: 25px;
-  height: 25px;
-}
-.star {
-  width: 25px;
-  height: 25px;
-}
-.star {
-  width: 25px;
-  height: 25px;
-}
-.star {
-  width: 25px;
-  height: 25px;
-}
-
-/* iMac Block */
-.shop {
-  position: relative;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  margin: 50px;
-  border-radius: 30px;
-  box-shadow: 26px 26px 222px rgba(146, 113, 113, 0.63);
-}
-
-.shop__item {
-  display: inline-block;
-  margin: 20px;
-  justify-content: space-between;
-}
-
-.iMac {
-  width: 350px;
-  height: 530px;
-  box-shadow: 15px 15px 10px rgba(187, 160, 160, 0.63);
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-}
-
-.iMac__photo {
-  object-fit: cover;
-  padding: 10px 0 0;
-  height: 192px;
-  width: 58%;
-}
-.iMac__photo-1 {
-  border-radius: 25px;
-  margin: 0 0 0 25px;
-  object-fit: cover;
-  padding: 10px;
-  height: 34%;
-  width: 90%;
-}
-
-.iMac__photo-2 {
-  object-fit: cover;
-  padding: 10px;
-  height: 34%;
-  width: 40%;
-}
-
-.iMac__title {
-  border-radius: 20px;
-  background-color: #e6e6e631;
-  font-size: 21px;
-  font-family: "Kaushan Script", cursive;
-  margin: 20px;
-}
-.iMac__title::after {
-  content: "";
-  display: block;
-
-  margin: 15px auto;
-  width: 200px;
-  height: 3px;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.25) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    #56ccf2;
-}
-
-.iMac__code {
-  color: #1a232446;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 43px 10px 30px;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.iMac__reviews {
-  display: inline-block;
-  position: static;
-  margin: 10px 45px 0 0;
-}
-.iMac__reviews:hover {
-  cursor: pointer;
-}
-
-.reviev {
-  margin: 0 15px 0 20px;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.iMac__reviews svg:nth-child(n + 0) path {
-  fill: grey;
-}
-.iMac__reviews svg:nth-child(-n + 4) path {
-  fill: rgb(251, 255, 0);
-}
-
-.iMac__price {
-  font-weight: 700;
-  color: #000000;
-  font-size: 20px;
-  margin: 20px 40px 25px 33px;
-  display: flex;
-  justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
-}
-.money {
-  color: rgb(5, 129, 5);
-}
-
-span {
-  font-weight: 700;
-}
-
-button {
-  background-color: #3badd3;
-  border-radius: 7px;
-  width: 250px;
-  height: 35px;
-  font-size: 22px;
-  color: #fff;
-  font-weight: 900;
-  letter-spacing: 4px;
-}
-button:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #3badd3;
-  border: 2px solid #3badd3;
-}
-button:focus {
-  color: red;
-  border: 2px solid red;
-}
-
-@media (max-width: 1300px) {
-  .header {
-    position: relative;
-    display: flex;
-    justify-content: start;
-    font-size: 16px;
-    width: 96%;
-  }
-  .row {
-    width: 77%;
-  }
-}
-
-@media (max-width: 1230px) {
-  .row {
-    width: 76%;
-    height: 80%;
-    display: block;
-    padding: 8%;
-  }
-
-  .nav {
-    margin: 2% 5% 0 10%;
-  }
-
-  .header {
-    width: 100%;
-  }
-
-  .service__title {
-    justify-content: center;
-    width: 100%;
-  }
-  .service__description {
-    font-size: 20px;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    margin: 3% 2% 10% 2%;
-    width: 100%;
-    height: 50%;
-  }
-  .header {
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .row {
-    width: 74%;
-  }
-  .nav {
-    display: block;
-    padding: 0;
-    width: 100%;
-    height: 50px;
-    font-size: 15px;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-    text-transform: none;
-  }
 }
